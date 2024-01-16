@@ -6,29 +6,27 @@ public class Ej2 {
 
 	public static void main(String[] args) {
 		
-		//creamos 
-		int lista[]= new int[55];
-		
-		int inicio=0,fin=0;
-		
-		for(int i =1;i<=10;i++) {
-			
-			fin+=i;
-			
-			Arrays.fill(lista, inicio,fin,i);
-			
-			inicio+=i;
-			
-		}
-		
-		//Arrays.fill(lista, 0,1,1);
-		//Arrays.fill(lista, 1,3,2);
-		//Arrays.fill(lista, 3,6,3);
-		//Arrays.fill(lista,6,10,4);
-		
-		
-		
-		System.out.println(Arrays.toString(lista));
+		//creamos un array con la varible int y con longitud 55
+				int lista[]= new int[55];
+				
+				//con la variable int creamos inicio y fin y lo inicializamos a 0
+				int inicio=0,fin=0;
+				
+				//creamos for que itere las instrucciones 10 veces
+				for(int i =1;i<=10;i++) {
+					//fin se suma con el valor de i
+					fin+=i;
+					
+					//rellenamos el array en las pocisiones inicio y fin con el relleno i
+					Arrays.fill(lista, inicio,fin,i);
+					
+					//inicio se suma con el valor i
+					inicio+=i;
+					
+				}
+				
+				//Imprimimos la lista 
+				System.out.println(Arrays.toString(lista));
 	}
 
 }

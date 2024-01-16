@@ -27,11 +27,7 @@ public class Ej8 {
 		num = sc.nextInt();
 		//imprimimos resultado
 		System.out.println(lista[num]);
-		
-		
-		
-		
-		
+	
 		sc.close();
 	}
 
