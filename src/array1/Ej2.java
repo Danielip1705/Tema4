@@ -9,7 +9,7 @@ public class Ej2 {
 		//creamos un array con la varible int y con longitud 55
 		int lista[]= new int[55];
 		
-		//con la variable int creamos inicio y fin y lo inicializakos a 0
+		//con la variable int creamos inicio y fin y lo inicializamos a 0
 		int inicio=0,fin=0;
 		
 		//creamos for que itere las instrucciones 10 veces
