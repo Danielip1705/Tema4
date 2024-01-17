@@ -57,6 +57,8 @@ public class Ej6 {
 		//imprimimos en consola el numero de veces que se ha repetido el numero en el array
 		System.out.println("El numero se repite en el array " + contador);
 		
+		//cerramos el scanner
+		sc.close();
 
 	}
 

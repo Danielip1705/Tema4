@@ -9,7 +9,7 @@ public class Ej7 {
 		int lista[] = new int[6];
 		
 		//creamos array con la variable int, longitud 6 y con valores entre el 1 y el 49
-		int ganador[] = {34,27,19,17,1,7};
+		int ganador[] = {17,21,5,36,3,7};
 		
 		//creamos aciertos con la variable int
 		int aciertos=0;

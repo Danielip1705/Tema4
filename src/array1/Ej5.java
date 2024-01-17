@@ -25,9 +25,10 @@ public class Ej5 {
 			// escribimos el dato en el lista
 			lista[i] = sc.nextInt();
 		}
-
+		//imprimimos el array en consola
 		System.out.println(Arrays.toString(lista));
-
+		
+		//Cerramos el scanner
 		sc.close();
 	}
 
