@@ -6,7 +6,7 @@ public class Ej1 {
 
 	public static void main(String[] args) {
 		// creamos un array con la variable int y con datos ya inicializados
-		int lista[] = { 10, 15, 5, 10 };
+		int lista[] = { 10, 25, 5, 10 };
 
 		// creamos con la varible int resultado, donde su inicializacion sera el return
 		// de la funcion sumaArray

@@ -20,7 +20,7 @@ public class Ej4 {
 		//creamos for que recorra el array
 		for(int i =0;i<t.length;i++) {
 			
-			//le damos a un numero aleatorio entre el 1 y 49 a cada dato
+			//le damos un numero aleatorio entre el 1 y 49 a cada dato
 			t[i]=(int) (Math.random()*50);
 		}
 		
