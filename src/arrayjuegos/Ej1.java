@@ -10,10 +10,10 @@ public class Ej1 {
 		// Creamos un array con la variable int y de longitud 10
 		char vector[] = new char[10];
 
-		int posicion[] = new int[10];
+		int escondite[] = new int[10];
 
 		// Con la variable string creamos mosca y lo inicializamos a "X"
-		int mosca, golpear, indice = 0;
+		int mosca, golpear,ubicacion=0, indice = 0;
 
 		Random rand = new Random();
 
@@ -21,11 +21,17 @@ public class Ej1 {
 
 		mosca = rand.nextInt(vector.length);
 
-		posicion[mosca]=1;
+		escondite[mosca]=1;
 		
-		
+		System.out.println(Arrays.toString(escondite));
 
-		
+		while(indice<escondite.length) {
+			indice++;
+			if(escondite[indice]==escondite[mosca]) {
+				ubicacion = escondite[mosca];
+			}
+			System.out.println(ubicacion);
+		}
 			
 
 		
