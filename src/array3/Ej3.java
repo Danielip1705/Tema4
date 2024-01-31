@@ -35,7 +35,7 @@ public class Ej3 {
 			for (int j = 0; j < matriz[i].length; j++) {
 
 				// Hacemos que cada dato se multiplique por la fila y la columna
-				matriz[i][j] *= i * j;
+				matriz[i][j] *= 10*i + j;
 
 			}
 		}
