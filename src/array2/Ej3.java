@@ -12,11 +12,6 @@ public class Ej3 {
 		// Creamos con la variable int longitud
 		int longitud;
 
-		// Creamos array con la variable int
-		int lista[];
-
-		int resultado[];
-
 		// creamos scanner
 		Scanner sc = new Scanner(System.in);
 
@@ -25,9 +20,6 @@ public class Ej3 {
 
 		// Insertamos la longitud
 		longitud = sc.nextInt();
-
-		// Indicamos que la longitud de lista es el valor de longitud
-		lista = new int[longitud];
 
 		// imprimimos en consola que nos indique el fin del relleno
 		System.out.println("Indica que numero del relleno es el limite");
@@ -38,6 +30,9 @@ public class Ej3 {
 		// imprimimos en pantalla con la clase array.toString el resultado de la funcion
 		// rellenaPares
 		System.out.println(Arrays.toString(Ej3.rellenaPares(longitud, fin)));
+
+		// Cerramos scanner
+		sc.close();
 	}
 
 	// creamos funcion que devuelva un array entero y con 2 parametros de entrada
@@ -51,7 +46,7 @@ public class Ej3 {
 		for (int i = 0; i < j.length; i++) {
 
 			// rellenamos cada dato con un numero aleatorio entre el 2 y fin
-			j[i] = (int) (Math.random() * (fin-1) + 2);
+			j[i] = (int) (Math.random() * (fin - 1) + 2);
 
 			// creamos bucle while haciendo que si el dato no es par, que le de otro numero
 			// aleatorio entre el 2 y el fin. Hasta que sea par
