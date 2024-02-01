@@ -23,6 +23,13 @@ public class Ej5 {
 			System.out.print(sumaFilas);
 			System.out.println();
 		}
+		for(int j=0;j<matriz.length;j++) {
+			sumaColumnas=0;
+			for(int i=0;i<matriz[j].length;i++) {
+				sumaColumnas+=matriz[j][i];
+				System.out.print(sumaFilas+"\t");
+			}
+		}
 
 	}
 
