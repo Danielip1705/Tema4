@@ -1,11 +1,16 @@
 package array3;
-
+/**
+ * Clase Ej1
+ */
 public class Ej1 {
-
+	/**
+	 * Funcion main para ejecutar el programa
+	 * @param args 
+	 */
 	public static void main(String[] args) {
 		// creamos un array bidimecional con la variable int y le indicamos la longitud
 		// de la fila y columna
-		int matriz[][] = new int[3][6];
+		final int matriz[][] = new int[3][6];
 
 		//Asignamos numeros a los datos que corresponde de la 1º fila
 		matriz[0][0] = 0;

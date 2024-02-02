@@ -51,7 +51,7 @@ public class Ej2 {
 			System.out.println();
 
 			// Realizamos la media
-			media /= 4;
+			media /= 5;
 
 			// Imprimimos en consola la media(realizamos un cast para pasar la variable
 			// media a int)
@@ -68,6 +68,8 @@ public class Ej2 {
 			minimo = 10;
 			media = 0;
 		}
+		//Cerramos scanner
+		sc.close();
 	}
 
 }
