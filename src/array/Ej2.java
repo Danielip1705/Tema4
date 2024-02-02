@@ -22,10 +22,12 @@ public class Ej2 {
 			tabla[i] =sc.nextDouble();  
 			
 		}
-		//
+		//for each para recorrer la tabla 
 		for(double num : tabla) {
+			//Imprimimos en pantalla el num
 			System.out.println(num);
 		}
+		//Cerramos scanner
 		sc.close();
 	}
 

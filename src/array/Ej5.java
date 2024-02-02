@@ -33,7 +33,7 @@ public class Ej5 {
 			if (lista[i] > max) {
 				// Hacemos que se almacene en max el valor mas grande
 				max = lista[i];
-			} 
+			}
 			if (lista[i] < min) {
 				// Hacemos que se almacene en min el valor mas pequeño
 				min = lista[i];
