@@ -9,7 +9,8 @@ public class Ej8 {
 
 		boolean simetrico = esSimetrico(matrizNoSimet);
 
-		if (simetrico == true) {
+		if (simetrico) {
+			
 			System.out.println("La matriz es simetrica");
 		} else {
 			System.out.println("La matriz no es simetrica");
