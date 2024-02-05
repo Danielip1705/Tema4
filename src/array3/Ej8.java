@@ -7,7 +7,7 @@ public class Ej8 {
 
 		int[][] matrizNoSimet = new int[4][5];
 
-		boolean simetrico = esSimetrico(matrizNoSimet);
+		boolean simetrico = esSimetrico(matrizSiSimet);
 
 		if (simetrico) {
 			
@@ -28,6 +28,7 @@ public class Ej8 {
 				if (matriz[i][j] != matriz[j][i]) {
 
 					simetrico = false;
+					
 					break;
 				}
 			}
