@@ -23,9 +23,10 @@ public class Ej5 {
 		//Creamos bucle for que lea la cadena frase invertida (de fin a principio)
 		for(int i=frase.length()-1;i>=0;i--) {
 			
-			//Suma
+			//Concatenamos los caracteres en cadenaInvertida
 			cadenaInvertida+=frase.charAt(i);
 		}
+		//Devolvemos cadenaInvertida
 		return cadenaInvertida;
 	}
 
