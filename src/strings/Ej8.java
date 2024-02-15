@@ -7,7 +7,11 @@ public class Ej8 {
 	public static void main(String[] args) {
 
 		// Con la clase String creamos frase e incializamos con una cadena
-		String frase = "al patap la";
+		String frase = "Dabale arroz a la zorra elabad";
+		
+		frase= frase.toLowerCase();
+		
+		frase = frase.replace(" ", "");
 
 		// Creamos con la variable boolean e inicializamos con el resultado con nos a
 		// dado la funcion palindroma
