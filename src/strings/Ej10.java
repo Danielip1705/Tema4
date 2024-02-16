@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ej10 {
 
 	public static void main(String[] args) {
-		//
+		//Creamos scanner
 		Scanner sc = new Scanner(System.in);
 
 		// Creamos array con la variable char y asignamos los datos para la codificar
@@ -35,7 +35,7 @@ public class Ej10 {
 			// Sacamos el caracter de frase dependiendo de la posicion de i
 			comprobar = frase.charAt(i);
 
-			// Caracter se inicializa al resultado de la funcion codifica
+			// Caracter se inicializa al resultado de la funcion codifica()
 			caracter = codifica(conjunto1, conjunto2, comprobar);
 
 			// Sumamos en comprobacion el caracter codificado
@@ -44,6 +44,9 @@ public class Ej10 {
 		}
 		// Imprimimos la palabra codificada
 		System.out.println("Palabra codificada: " + comprobacion);
+		
+		//Cerramos scanner
+		sc.close();
 
 	}
 
@@ -68,7 +71,7 @@ public class Ej10 {
 			//Declaramos con if que si el dato de conjunto1 es igual que c
 			if (conjunto1[i] == c) {
 				
-				//caracter es igual que el el dato de conjunto2
+				//Caracter es igual que a la posicion del dato de conjunto2
 				caracter = conjunto2[i];
 				
 				//nos salidmos del if
