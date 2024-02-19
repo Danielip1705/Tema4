@@ -15,13 +15,22 @@ public class Ej13 {
 		
 		boolean res = false;
 
-		System.out.println("Escribe 2 paabras");
+		System.out.println("Escribe 2 palabras");
 		
 		frase1= sc.nextLine();
 		
 		frase2 = sc.nextLine();
 		
 		res=anagrama(frase1, frase2);
+		
+		if(res) {
+			
+			System.out.println("Es anagrama");
+		} else {
+			System.out.println("No es anagrama");
+		}
+		
+		sc.close();
 
 	}
 

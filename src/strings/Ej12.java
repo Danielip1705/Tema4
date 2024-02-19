@@ -20,6 +20,7 @@ public class Ej12 {
 		// Cremaos con la variable int maximo e inizializamos
 		int maximo = 0;
 
+		//Imprimimos en consola que escriba una frase
 		System.out.println("Escriba una frase");
 
 		frase = sc.nextLine();
@@ -28,14 +29,14 @@ public class Ej12 {
 
 		for (int i = 0; i < separador.length; i++) {
 
-
 			if (comprobar < separador[i].length()) {
 
 				palabra = separador[i];
-				
+
+				maximo = palabra.length();
+
 			}
-			
-			
+
 		}
 		System.out.println("Palabra mas larga: " + palabra);
 

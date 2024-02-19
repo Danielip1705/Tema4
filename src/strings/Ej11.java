@@ -21,8 +21,15 @@ public class Ej11 {
 		String codificada = "";
 		String comprobacion = "";
 
+		//Imprimios en consola que escriba la frase decodificada
 		System.out.println("Escriba la frase que quieras decodificar");
+		
+		//Escribimos la frase codificada
+		codificada = sc.nextLine();
+		
+		//Creamos array para leer la frase
 		for (int i = 0; i < codificada.length(); i++) {
+			
 			// Sacamos el caracter de frase dependiendo de la posicion de i
 			comprobar = codificada.charAt(i);
 
