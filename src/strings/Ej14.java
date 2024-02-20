@@ -1,6 +1,5 @@
 package strings;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Ej14 {
@@ -45,11 +44,13 @@ public class Ej14 {
 			if (letra != ' ') {
 
 				System.out.println(letra + ": " + num);
-				
+
 			}
-			
+
 			num = 0;
 		}
+		
+		sc.close();		
 
 	}
 

@@ -15,6 +15,20 @@ public class Ej17 {
 		frase = sc.nextLine();
 		
 		
+		
+		
+	}
+	
+	public static String quitarLenguajeC(String codigo) {
+		
+		String resultado="";
+		char[] caracter= codigo.toCharArray();;
+		for(int i=0;i<codigo.length();i++) {
+			
+			if(codigo[i]) {
+				
+			}
+		}
 	}
 
 }
