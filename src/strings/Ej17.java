@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class Ej17 {
 
+	public static final String FINAL = "*/";
+	public static final String INICIO = "/*";
+
 	public static void main(String[] args) {
 		// Cramos scanner
 		Scanner sc = new Scanner(System.in);
@@ -25,6 +28,9 @@ public class Ej17 {
 
 		// Imprimimos en consola resultado
 		System.out.println(resultado);
+		
+		//Cerramos scanner
+		sc.close();
 
 	}
 
@@ -38,29 +44,29 @@ public class Ej17 {
 
 		// Creamos con la variable int inicioComentario e incializamos al indice donde
 		// esta el primer comentario
-		int inicioComentario = codigo.indexOf("/*");
+		int inicio = codigo.indexOf(INICIO);
 
 		// Creamos con la variable int finComentario e incializamos al indice donde esta
 		// el comentario cerrado
-		int finComentario = 0;
+		int fin = 0;
 
 		// Creamos bucle while para buscar si hay mas comentarios en la cadena
-		while (inicioComentario != -1) {
+		while (inicio != -1) {
 
-			finComentario = codigo.indexOf("*/", inicioComentario);
+			fin = codigo.indexOf(FINAL, inicio);
 
 			// Declaramos con if que si hay comenarios
-			if (finComentario != -1) {
+			if (fin != -1) {
 
 				// Le quitaremos a codigo los comentarios
-				codigo = codigo.substring(0, inicioComentario) + codigo.substring(finComentario + 2);
+				codigo = codigo.substring(0, inicio) + codigo.substring(fin + 2);
 				// Si no hay cierre del comentario
 			} else {
 				 //Se elimina desde el inicio del comentario hasta el final de la cadena
-				codigo = codigo.substring(0, inicioComentario);
+				codigo = codigo.substring(0, inicio);
 			}
 			// Busca el siguiente inicio de comentario
-			inicioComentario = codigo.indexOf("/*");
+			inicio = codigo.indexOf(INICIO);
 		}
 		//Devolvemos codigo
 		return codigo;

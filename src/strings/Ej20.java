@@ -35,6 +35,9 @@ public class Ej20 {
 
 		// Imprimimos resultado
 		System.out.println(Arrays.toString(resultado));
+
+		// Cerramos scanner
+		sc.close();
 	}
 
 	/***
@@ -47,7 +50,8 @@ public class Ej20 {
 	public static String[] dividirPalabra(String frase, int divisor) {
 
 		// Cremamos Array de string e inicializamos con la longitud de divisor
-		String[] palabras = new String[divisor];
+		String[] palabras = new String[(int)Math.ceil((double)frase.length()/divisor)];
+		
 
 		// Creamos con la variable int n e incializamos a divisor
 		int n = divisor;
@@ -57,15 +61,21 @@ public class Ej20 {
 
 		// Creamos bucle for para recorrer el array
 		for (int i = 0; i < palabras.length; i++) {
-
+			
+			if(divisor*(i+1)>frase.length()){
+				palabras[i]= frase.substring(divisor*i);
+			} else {
+				palabras[i]= frase.substring(divisor*i,divisor*(i+1));
+			}
+			
 			// El 1º dato del array sera frase desde comienzo hasta n
-			palabras[i] = frase.substring(comienzo, n);
+			//palabras[i] = frase.substring(comienzo, n);
 
 			// comiezo se suma divisor
-			comienzo += divisor;
+			//comienzo += divisor;
 
 			// n se suma a divisor
-			n += divisor;
+			//n += divisor;
 		}
 		// Devolmemos palabras
 		return palabras;
