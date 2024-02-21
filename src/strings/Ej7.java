@@ -33,6 +33,9 @@ public class Ej7 {
 
 		// Imprimimos el resultado
 		System.out.println("En la frase contiene " + resultado + " veces la palabra " + palabra);
+		
+		//Cerramos scanner
+		sc.close();
 	}
 
 	/**

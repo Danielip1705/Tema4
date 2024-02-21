@@ -42,6 +42,9 @@ public class Ej11 {
 
 		// Imprimimos la palabra codificada
 		System.out.println("Palabra codificada: " + comprobacion);
+		
+		//Cerramos scanner
+		sc.close();
 
 	}
 

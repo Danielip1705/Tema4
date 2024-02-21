@@ -49,35 +49,26 @@ public class Ej20 {
 	 */
 	public static String[] dividirPalabra(String frase, int divisor) {
 
-		// Cremamos Array de string e inicializamos con la longitud de divisor
-		String[] palabras = new String[(int)Math.ceil((double)frase.length()/divisor)];
-		
+		// Creamos un array de string e inicializamos con la longitud del cociente de la
+		// longitud de la frase entre el divisor
+		String[] palabras = new String[(int) Math.ceil((double) frase.length() / divisor)];
 
-		// Creamos con la variable int n e incializamos a divisor
-		int n = divisor;
-
-		// Creamos con la variable int n e incializamos a 0
-		int comienzo = 0;
-
-		// Creamos bucle for para recorrer el array
+		// Creamos un bucle for para recorrer el array
 		for (int i = 0; i < palabras.length; i++) {
-			
-			if(divisor*(i+1)>frase.length()){
-				palabras[i]= frase.substring(divisor*i);
+
+			// Verificamos si el producto del divisor y (i+1) es mayor que la longitud de la
+			// frase
+			if (divisor * (i + 1) > frase.length()) {
+				// Si es mayor, asignamos la parte restante de la frase a la posición i del
+				// array
+				palabras[i] = frase.substring(divisor * i);
 			} else {
-				palabras[i]= frase.substring(divisor*i,divisor*(i+1));
+				// Si no es mayor, asignamos la subcadena de la frase del índice divisor*i al
+				// índice divisor*(i+1) - 1 a la posición i del array
+				palabras[i] = frase.substring(divisor * i, divisor * (i + 1));
 			}
-			
-			// El 1º dato del array sera frase desde comienzo hasta n
-			//palabras[i] = frase.substring(comienzo, n);
-
-			// comiezo se suma divisor
-			//comienzo += divisor;
-
-			// n se suma a divisor
-			//n += divisor;
 		}
-		// Devolmemos palabras
+		// Devolvemos el array de palabras
 		return palabras;
 	}
 }

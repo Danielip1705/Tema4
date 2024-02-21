@@ -40,7 +40,7 @@ public class Ej19 {
 	 * @return Cadena sin espacio y con la nomenclatura camel
 	 */
 	public static String pasarCamel(String frase) {
-		
+
 		// Cremaos Array de string e inicializamos a frase sin los espacios utilizando
 		// .split
 		String[] pasar = frase.trim().split(" ");
@@ -59,7 +59,7 @@ public class Ej19 {
 			}
 
 			// Declaramos con if que si estamos en el 1 o mayor bucle
-			if (i >= 1 ) {
+			if (i >= 1) {
 
 				// camel se inicializa la palabra con el 1º caracter en mayusculas
 				camel += pasar[i].substring(0, 1).toUpperCase();
